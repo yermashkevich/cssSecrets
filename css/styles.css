@@ -1,0 +1,21 @@
+body {
+    background-color: #050015;
+    font-family: Arial;
+    color: #ffffff;
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.frame-element {
+    margin: 30px auto;
+    background-color: #4B90FF;
+    width: 250px;
+    padding: 15px 20px;
+    border: 15px solid rgba(75, 144, 255, 0.5);
+    -webkit-background-clip: no-clip;
+    -moz-background-clip: no-clip;
+    background-clip: padding-box;
+}
