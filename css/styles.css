@@ -9,6 +9,11 @@ h2 {
     font-size: 25px;
 }
 
+p {
+    padding: 0;
+    margin: 0;
+}
+
 .frame-element {
     margin: 30px auto;
     background-color: #4B90FF;
@@ -18,4 +23,33 @@ h2 {
     -webkit-background-clip: no-clip;
     -moz-background-clip: no-clip;
     background-clip: padding-box;
+}
+
+.flex-wrap {
+    display: flex;
+    justify-content: space-around;
+}
+
+.multiply-border {
+    background-color: crimson;
+    padding: 20px 25px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.multiply-border-shadow {
+    box-shadow: 0 0 0 5px #CC8ADC, 0 0 0 15px #5149DC;
+}
+
+.multiply-border-outline {
+    border: 5px solid #CC8ADC;
+    outline: 10px solid #5149DC;
+}
+
+.multiply-border-dashed {
+    border: 10px solid transparent;
+    outline: 2px dashed #eeeeee;
+    outline-offset: -10px;
 }
