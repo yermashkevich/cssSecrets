@@ -14,6 +14,8 @@ p {
     margin: 0;
 }
 
+/* полупрозрачные рамки */
+
 .frame-element {
     margin: 30px auto;
     background-color: #4B90FF;
@@ -29,6 +31,8 @@ p {
     display: flex;
     justify-content: space-around;
 }
+
+/* несколько рамок */
 
 .multiply-border {
     background-color: crimson;
@@ -52,4 +56,49 @@ p {
     border: 10px solid transparent;
     outline: 2px dashed #eeeeee;
     outline-offset: -10px;
+}
+
+/* позиционирование фона */
+
+.background-position {
+    width: 250px;
+    padding: 40px 25px;
+    text-align: left;
+    background: #5149DC url("../img/circle.png") no-repeat;
+    -webkit-background-size: 40%;
+    background-size: 25%;
+}
+
+.background-position-word {
+    background-position: bottom 5px right 5px;
+}
+
+.background-position-origin {
+    background-position: top right;
+    background-origin: content-box;
+}
+
+.background-position-calc {
+    background-position: calc(100% - 5px) calc(100% - 10px);
+}
+
+/* внутреннее скругление углов */
+
+.inner-rounding {
+    width: 250px;
+    background-color: #4B90FF;
+    padding: 15px 20px;
+}
+
+.inner-rounding-elements p {
+    background-color: aquamarine;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.inner-rounding-shadow {
+    background-color: aquamarine;
+    border-radius: 10px;
+    box-shadow: 0 0 0 10px #4B90FF;
+    outline: 15px solid #4B90FF;
 }
