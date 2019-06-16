@@ -30,6 +30,7 @@ p {
 .flex-wrap {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 /* несколько рамок */
@@ -101,4 +102,67 @@ p {
     border-radius: 10px;
     box-shadow: 0 0 0 10px #4B90FF;
     outline: 15px solid #4B90FF;
+}
+
+/* Полосатый фон */
+
+.striped-background {
+    width: 250px;
+    height: 100px;
+}
+
+.striped-background-horizontal {
+    background: linear-gradient(#4B90FF 30%, #FFE95A 0, #FFE95A 80%, crimson 0);
+    background-size: 100% 50px;
+}
+
+.striped-background-vertical {
+    background: linear-gradient(to right, #4B90FF 30%, #FFE95A 0, #FFE95A 80%, crimson 0);
+    background-size: 50px 100%;
+}
+
+.striped-background-diagonal {
+    background: linear-gradient(45deg, crimson 25%, #4B90FF 0, #4B90FF 50%, crimson 0, crimson 75%, #4B90FF 0); /* для двух цветов */
+    background-size: 50px 50px;
+}
+
+.striped-background-best {
+    background: repeating-linear-gradient(30deg, crimson, crimson 30px, #4B90FF 0, #4B90FF 60px, #FFE95A 0px, #FFE95A 90px);
+}
+
+.striped-background-soft {
+    background: #4B90FF;
+    background-image: repeating-linear-gradient(30deg, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.2) 15px, transparent 0, transparent 30px);
+}
+
+/* сложные фоны: сетка */
+
+.complex-background {
+    width: 250px;
+    height: 150px;
+    background-color: steelblue;
+}
+
+.complex-network-own {
+    background-image:
+            linear-gradient(90deg, rgba(200, 0, 0, 0.2) 50%, transparent 0),
+            linear-gradient(rgba(200, 0, 0, 0.2) 50%, transparent 0);
+    background-size: 25px 25px;
+}
+
+.complex-network-two {
+    background-image:
+            linear-gradient(90deg, #ffffff 1px, transparent 0),
+            linear-gradient(#ffffff 1px, transparent 0);
+    background-size: 30px 30px;
+}
+
+.complex-network-three {
+    background-image:
+            linear-gradient(90deg, #ffffff 2px, transparent 0),
+            linear-gradient(#ffffff 2px, transparent 0),
+            linear-gradient(90deg, rgba(256, 256, 256, 0.3) 1px, transparent 0),
+            linear-gradient(rgba(256, 256, 256, 0.3) 1px, transparent 0);
+    background-size: 50px 50px, 50px 50px,
+                    10px 10px, 10px 10px;
 }
